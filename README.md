@@ -8,3 +8,24 @@ Additionally, the system enables automated feedback by sending an email with com
 Moreover, this system reduces administrative workload, allowing educators to focus on qualitative aspects of teaching, improving classroom dynamics, and enhancing education. As a result, it contributes to a more efficient and effective learning process.
 
 While it was specifically designed for Universidad Empresarial Siglo 21, the database models can be redesigned using SQLAlchemy and Alembic for migrations. The system is intended for practical use by teachers without the need to expose student data through a web frontend. Instead, feedback is maintained via a microservice, allowing modifications directly from the backend based on the needs of the institution, the teacher, or the subject, like data analytics asynchronus tasks by Python integrated libraries.
+
+# Architecture
+├── .gitignore
+├── README.md
+├── app
+    ├── __init__.py
+    ├── config
+    │   └── config.py - database connection
+    ├── core
+    │   └── schemas.py - sqlalchemy tables / del db creation code once you run it
+    ├── main.py - app routes / exe terminal cl: cd app
+    │   uvicorn main:app --reload
+    └── solution
+    │   ├── __init__.py
+    │   ├── models
+    │       └── models.py - pydantic models for data validations
+    │   ├── routers
+    │       └── students.py - fastapi functions and routers
+    │   └── services
+    │       └── messages.py - message definition
+└── requirements.txt - app requirements / exe terminal cl: pip install -r requirements.txt
