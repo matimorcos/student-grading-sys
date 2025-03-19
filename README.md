@@ -13,19 +13,19 @@ While it was specifically designed for Universidad Empresarial Siglo 21, the dat
 ### ├── .gitignore
 ### ├── README.md
 ### ├── app
-### ├── __init__.py
-### ├── config
-### │   └── config.py - database connection
-### ├── core
-### │   └── schemas.py - sqlalchemy tables / del db creation code once you run it
-### ├── main.py - app routes / exe terminal cl: cd app
-### │   uvicorn main:app --reload
-### └── solution
-### │   ├── __init__.py
-### │   ├── models
-### │       └── models.py - pydantic models for data validations
-### │   ├── routers
-### │       └── students.py - fastapi functions and routers
-### │   └── services
-### │       └── messages.py - message definition
-### └── requirements.txt - app requirements / exe terminal cl: pip install -r requirements.txt
+#### ├── __init__.py
+#### ├── config
+#### │   └── config.py - database connection
+#### ├── core
+#### │   └── schemas.py - sqlalchemy tables / del db creation code once you run it
+#### ├── main.py - app routes / exe terminal cl: cd app
+#### │   uvicorn main:app --reload
+#### └── solution
+#### │   ├── __init__.py
+#### │   ├── models
+#### │       └── models.py - pydantic models for data validations
+#### │   ├── routers
+#### │       └── students.py - fastapi functions and routers
+#### │   └── services
+#### │       └── messages.py - message definition
+#### └── requirements.txt - app requirements / exe terminal cl: pip install -r requirements.txt
