@@ -9,7 +9,7 @@ Moreover, this system reduces administrative workload, allowing educators to foc
 
 While it was specifically designed for Universidad Empresarial Siglo 21, the database models can be redesigned using SQLAlchemy and Alembic for migrations. The system is intended for practical use by teachers without the need to expose student data through a web frontend. Instead, feedback is maintained via a microservice, allowing modifications directly from the backend based on the needs of the institution, the teacher, or the subject, like data analytics asynchronus tasks by Python integrated libraries.
 
-# Architecture
+# Architecture & Use
 ### ├── .gitignore
 ### ├── README.md
 ### ├── app
